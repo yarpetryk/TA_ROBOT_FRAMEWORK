@@ -1,0 +1,8 @@
+#venv
+/venv/
+
+#test logs ans reports
+/Tests/Report
+
+#idea
+/.idea/

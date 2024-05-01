@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220606 12:02:21.632" rpa="false" schemaversion="3">
+<suite id="s1" name="Robor Seleium Web Driver Example" source="C:\Users\YaroslavPetryk\PycharmProjects\robor_seleium_web_driver_example">
+<suite id="s1-s1" name="Tests" source="C:\Users\YaroslavPetryk\PycharmProjects\robor_seleium_web_driver_example\Tests">
+<suite id="s1-s1-s1" name="Application Form Tests" source="C:\Users\YaroslavPetryk\PycharmProjects\robor_seleium_web_driver_example\Tests\application_form_tests.robot">
+<kw name="Log" library="BuiltIn" type="SETUP">
+<arg>QA team i am inside suit setup</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220606 12:02:21.906" level="INFO">QA team i am inside suit setup</msg>
+<status status="PASS" starttime="20220606 12:02:21.906" endtime="20220606 12:02:21.906"/>
+</kw>
+<test id="s1-s1-s1-t1" name="User select option from dropdown" line="19">
+<kw name="Log" library="BuiltIn" type="SETUP">
+<arg>QA team i am inside test setup</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220606 12:02:21.906" level="INFO">QA team i am inside test setup</msg>
+<status status="PASS" starttime="20220606 12:02:21.906" endtime="20220606 12:02:21.906"/>
+</kw>
+<kw name="Select dropdown option" library="application_form_keywords">
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL_DROPDOWN}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220606 12:02:21.906" level="INFO">Opening browser 'Chrome' to base url 'https://fd7.formdesk.com/demo/marathon.payment2'.</msg>
+<msg timestamp="20220606 12:02:24.005" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220606 12:02:24.005" level="FAIL">WebDriverException: Message: unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH
+  (Session info: chrome=102.0.5005.63)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00A1D953+2414931]
+	Ordinal0 [0x009AF5E1+1963489]
+	Ordinal0 [0x0089C6B8+837304]
+	Ordinal0 [0x00898E18+822808]
+	Ordinal0 [0x0088DE5D+777821]
+	Ordinal0 [0x0088EA3B+780859]
+	Ordinal0 [0x0088E06A+778346]
+	Ordinal0 [0x0088D646+775750]
+	Ordinal0 [0x0088C565+771429]
+	Ordinal0 [0x0088CA3D+772669]
+	Ordinal0 [0x0089DEA4+843428]
+	Ordinal0 [0x008F4EBD+1199805]
+	Ordinal0 [0x008E449C+1131676]
+	Ordinal0 [0x008F4812+1198098]
+	Ordinal0 [0x008E42B6+1131190]
+	Ordinal0 [0x008BE860+976992]
+	Ordinal0 [0x008BF756+980822]
+	GetHandleVerifier [0x00C8CC62+2510274]
+	GetHandleVerifier [0x00C7F760+2455744]
+	GetHandleVerifier [0x00AAEABA+551962]
+	GetHandleVerifier [0x00AAD916+547446]
+	Ordinal0 [0x009B5F3B+1990459]
+	Ordinal0 [0x009BA898+2009240]
+	Ordinal0 [0x009BA985+2009477]
+	Ordinal0 [0x009C3AD1+2046673]
+	BaseThreadInitThunk [0x771E6739+25]
+	RtlGetFullPathName_UEx [0x77728FEF+1215]
+	RtlGetFullPathName_UEx [0x77728FBD+1165]
+</msg>
+<status status="FAIL" starttime="20220606 12:02:21.906" endtime="20220606 12:02:24.032"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${DISTANCE_VALUE}</var>
+<arg>Full marathon $ 10,-</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220606 12:02:24.032" endtime="20220606 12:02:24.032"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${LOCKER_VALUE}</var>
+<arg>Yes ($ 2,50)</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220606 12:02:24.033" endtime="20220606 12:02:24.033"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DROPDOWN_DISTANCE}</arg>
+<arg>${DISTANCE_VALUE}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20220606 12:02:24.033" endtime="20220606 12:02:24.033"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DROPDOWN_LOCKER}</arg>
+<arg>${LOCKER_VALUE}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20220606 12:02:24.033" endtime="20220606 12:02:24.033"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${AMOUNT_VALUE}</var>
+<arg>12.50</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220606 12:02:24.033" endtime="20220606 12:02:24.033"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${INPUT_AMOUNT_VALUE}</var>
+<arg>${INPUT_AMOUNT}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220606 12:02:24.033" endtime="20220606 12:02:24.033"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${AMOUNT_VALUE}</arg>
+<arg>${INPUT_AMOUNT_VALUE}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" starttime="20220606 12:02:24.033" endtime="20220606 12:02:24.033"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220606 12:02:24.033" endtime="20220606 12:02:24.033"/>
+</kw>
+<status status="FAIL" starttime="20220606 12:02:21.906" endtime="20220606 12:02:24.033"/>
+</kw>
+<kw name="Log" library="BuiltIn" type="TEARDOWN">
+<arg>QA team i am inside test teardown</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220606 12:02:24.034" level="INFO">QA team i am inside test teardown</msg>
+<status status="PASS" starttime="20220606 12:02:24.034" endtime="20220606 12:02:24.034"/>
+</kw>
+<tag>dropdown</tag>
+<status status="FAIL" starttime="20220606 12:02:21.906" endtime="20220606 12:02:24.034">WebDriverException: Message: unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH
+  (Session info: chrome=102.0.5005.63)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00A1D953+2414931]
+	Ordinal0 [0x009AF5E1+1963489]
+	Ordinal0 [0x0089C6B8+837304]
+	Ordinal0 [0x00898E18+822808]
+	Ordinal0 [0x0088DE5D+777821]
+	Ordinal0 [0x0088EA3B+780859]
+	Ordinal0 [0x0088E06A+778346]
+	Ordinal0 [0x0088D646+775750]
+	Ordinal0 [0x0088C565+771429]
+	Ordinal0 [0x0088CA3D+772669]
+	Ordinal0 [0x0089DEA4+843428]
+	Ordinal0 [0x008F4EBD+1199805]
+	Ordinal0 [0x008E449C+1131676]
+	Ordinal0 [0x008F4812+1198098]
+	Ordinal0 [0x008E42B6+1131190]
+	Ordinal0 [0x008BE860+976992]
+	Ordinal0 [0x008BF756+980822]
+	GetHandleVerifier [0x00C8CC62+2510274]
+	GetHandleVerifier [0x00C7F760+2455744]
+	GetHandleVerifier [0x00AAEABA+551962]
+	GetHandleVerifier [0x00AAD916+547446]
+	Ordinal0 [0x009B5F3B+1990459]
+	Ordinal0 [0x009BA898+2009240]
+	Ordinal0 [0x009BA985+2009477]
+	Ordinal0 [0x009C3AD1+2046673]
+	BaseThreadInitThunk [0x771E6739+25]
+	RtlGetFullPathName_UEx [0x77728FEF+1215]
+	RtlGetFullPathName_UEx [0x77728FBD+1165]
+</status>
+</test>
+<kw name="Log" library="BuiltIn" type="TEARDOWN">
+<arg>QA team i am inside suit teardown</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220606 12:02:24.036" level="INFO">QA team i am inside suit teardown</msg>
+<status status="PASS" starttime="20220606 12:02:24.036" endtime="20220606 12:02:24.036"/>
+</kw>
+<status status="FAIL" starttime="20220606 12:02:21.649" endtime="20220606 12:02:24.036"/>
+</suite>
+<status status="FAIL" starttime="20220606 12:02:21.648" endtime="20220606 12:02:24.037"/>
+</suite>
+<status status="FAIL" starttime="20220606 12:02:21.632" endtime="20220606 12:02:24.037"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">dropdown</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robor Seleium Web Driver Example">Robor Seleium Web Driver Example</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">Robor Seleium Web Driver Example.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Application Form Tests">Robor Seleium Web Driver Example.Tests.Application Form Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,9 @@
+###### Requirements without Version Specifiers ######
+
+robotframework                          # Robot Framework is a generic open source automation framework for acceptance testing,
+                                        #  acceptance test driven development (ATDD), and robotic process automation (RPA).
+robotframework-seleniumlibrary          # SeleniumLibrary is a web testing library for Robot Framework.
+robotframework-pabot                    # A parallel executor for Robot Framework tests.
+Faker                                   # Faker is a Python package that generates fake data for you
+robotframework-appiumlibrary            # AppiumLibrary is an appium testing library for Robot Framework.
+robotframework-stringformat             # stringformat library is a string formatter for Robot Framework.

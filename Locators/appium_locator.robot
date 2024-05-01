@@ -1,0 +1,17 @@
+*** Variables ***
+${ADD_USER}              //androidx.cardview.widget.CardView[4]//android.widget.FrameLayout[2]
+${USER_NAME}             //*[contains(@text, 'boxer name')]
+${USER_AGE}              //*[contains(@text, 'age')]
+${USER_HEIGHT}           //*[contains(@text, 'height')]
+${USER_WEIGHT}           //*[contains(@text, 'weight')]
+${USER_LEVEL}            //*[contains(@text, 'select your proficiency level')]
+${USER_LEVEL_VALUE}      //*[contains(@text, 'Beginner')]
+${USER_GENDER}           //*[contains(@text, 'select your gender')]
+${USER_GENDER_VALUE}     //*[contains(@text, 'Male')]
+${USER_STANCE}           //*[contains(@text, 'select your natural stance')]
+${USER_STANCE_VALUE}     //*[contains(@text, 'Orthodox')]
+${SAVE_PROFILE}          //*[contains(@text, 'SAVE PROFILE')]
+${LIST_USERS}            //androidx.cardview.widget.CardView[4]//android.widget.Spinner
+${SELECT_PROFILE}        //*[contains(@text, '{}')]
+${DELETE_USER}           //androidx.cardview.widget.CardView[4]//android.widget.LinearLayout//android.widget.FrameLayout[1]
+${CONFIRM_USER_DELETE}   //*[contains(@text, 'OK')]
